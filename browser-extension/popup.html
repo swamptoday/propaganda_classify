@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Text Classifier</title>
+</head>
+<body>
+    <h2>Classify Text</h2>
+    <textarea id="selected-text" placeholder="Select text on the page or enter manually"></textarea>
+    <button id="classify-btn">Classify</button>
+
+    <h3>Main Classification</h3>
+    <p id="main-result">Waiting for you to press!</p>
+
+    <div id="multi-label-section" style="display: none;">
+        <h3>Multi-label Classification</h3>
+        <p id="multi-label-result"></p>
+        <h4>Probabilities:</h4>
+        <ul id="probabilities-list"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
